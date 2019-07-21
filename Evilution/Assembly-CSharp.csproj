@@ -61,7 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera\Camera1.cs" />
-    <Compile Include="Assets\Scripts\Camera\Camera2.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCtrl.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/KarleSleith/Documents/Evilution/Evilution/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

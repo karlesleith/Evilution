@@ -14,23 +14,23 @@ public class Camera1 : MonoBehaviour
     void Start()
     {
         camNum = 1;
-        StartCoroutine(SwitchCamera());
+
     }
 
-    IEnumerator SwitchCamera()
+    
+
+    private void OnTriggerEnter(Collider other)
     {
-        yield return new WaitForSeconds(3);
-        cameraTwo.SetActive(true);//turn on camera 2
-        cameraOne.SetActive(false);//turn off camera 1
-        on = true;
-        camNum = 2;
 
-        yield return new WaitForSeconds(3);
-        cameraTwo.SetActive(false);//turn on camera 2
-        cameraOne.SetActive(true);//turn off camera 1
-        on = false;
-        camNum = 1;
+        Debug.Log("HIT");
+        if (other.tag == "Player")
+        {
+            cameraOne.SetActive(false);
+            cameraTwo.SetActive(true);
 
+       
+
+        }
     }
 
 
