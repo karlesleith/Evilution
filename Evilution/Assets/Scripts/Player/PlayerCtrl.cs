@@ -30,6 +30,23 @@ public class PlayerCtrl : MonoBehaviour
         {
             isMoving = false;
         }
+
+        //Implemented basic quickturn
+        if (Input.GetKeyDown(KeyCode.M)){
+            QuickTurn();
+        }
+
+
+    }
+
+
+
+
+   //VERY BASIC Quickturn
+    void QuickTurn()
+    {
+        theSTAR.transform.Rotate(0, 180, 0);
+       // Debug.Log("QuickTurned!");
     }
 
 }
